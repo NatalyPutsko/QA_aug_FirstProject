@@ -1,11 +1,17 @@
 package packageAdin;
 
+import java.util.Scanner;
+
 public class OurSuperPuperMegaClass {
-
     public static void main(String[] args) {
-        int a = 13;
-        int b = 4;
-        System.out.println(a%b);
-    }
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("vvedit chislo");
+        int k = sc.nextInt();
+        for (int i = 1; i <= k; i++) {
+            if (k % i == 0) {
+                System.out.println(i);
+            }
+        }
+    }
 }
